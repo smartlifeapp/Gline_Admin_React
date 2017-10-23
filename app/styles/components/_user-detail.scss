@@ -1,0 +1,61 @@
+.user-container {
+  display: flex; width: 100%; margin-bottom: 20px;
+  .user-profile {
+    width: 140px; height: 140px; object-fit: cover; border-radius: 5px;
+  }
+  .user-content-container {
+    display: flex; flex-direction: column; padding: 5px 10px 0 10px; justify-content: space-between; flex: 1;
+    .user-content-row { display: flex; align-items: center; flex-wrap: wrap;
+      &.buttons { flex: 1; align-items: flex-end; justify-content: flex-end; }
+    }
+    .user.content-column { display: flex; flex-direction: column; }
+    .user-age { margin-left: 10px; font-size: 16px; color: gray; }
+    .user-id { font-size: 24px; font-weight: bold; }
+    .user-nickname { color: $grey; font-size: 20px; }
+    .user-email { color: gray; margin-left: 15px; }
+    .user-status { border-radius: 4px; margin-left: 35px; padding: 5px 10px 5px 10px;
+      &.subscribed { background-color: green; color: white; }
+      &.free { background-color: limegreen; color: white; }
+      &.normal { background-color: limegreen; color: white; }
+      &.banned { background-color: darkorange; color: white; }
+      &.deregistered { background-color: lightgray; color: dimgray; }
+      &.adminDeleted { background-color: crimson; color: white; }
+    }
+    .user-value-container {
+      border: 1px solid $light-grey-border; border-radius: 5px; justify-content: center; align-items: center;
+      .user-value-content { min-width: 120px; height: 50px; text-align: center; vertical-align: middle; line-height: 50px; padding: 0 15px 0 15px; font-size: 18px; font-weight: bold; }
+      .user-value-label { background-color: $light-grey; height: 32px; text-align: center; line-height: 32px; vertical-align: middle; }
+    }
+  }
+}
+
+button.user-stat-value-container {
+  color: #353535;
+  padding: 0; background-color: rgba(0,0,0,0); height: auto;
+  display: flex; flex-direction: row;
+  border: 1px solid $light-grey-border; border-radius: 5px; justify-content: center; align-items: center; margin: 5px;
+  &.disabled {
+    &:hover, &:link, &.visited, &:active  {
+      opacity: 1; cursor:default;
+    }
+  }
+  .user-stat-icon-container {
+    width: 50px; height: 50px; background-color: $light-grey; display: flex; align-items: center; justify-content: center; border-radius: 5px 0 0 5px;
+    img.user-stat-icon {
+      width: 18px; height: 18; object-fit: contain;
+    }
+  }
+  .user-stat-value-content-container {
+    display: flex; flex-direction: column;
+    .user-stat-value-content { min-width: 60px; height: 34px; text-align: center; vertical-align: middle; line-height: 34px; padding: 0 15px 0 15px; font-size: 14px; font-weight: bold; }
+    .user-stat-value-label { background-color: white; height: 16px; text-align: center; font-weight: lighter; font-size: 11px; color: gray; }
+  }
+}
+
+
+/* Smartphones */
+@media only screen and (min-width: 320px) {
+}
+/* Tablets (portrait) */
+@media only screen and (min-width: 768px) {
+}

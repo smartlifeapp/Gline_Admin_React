@@ -1,0 +1,70 @@
+// The main container element
+.Collapsible {
+  background-color: $appTint;
+}
+
+//The content within the collaspable area
+.Collapsible__contentInner {
+  padding: 0;
+  //border: 1px solid lightGrey;
+  border-top: 0;
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    display: block;
+    font-size: 14px;
+    padding: 5px 0 5px 42px;
+    color: #8dd8ff;
+    text-decoration: none;
+  }
+}
+
+//The link which when clicked opens the collapsable area
+.Collapsible__trigger {
+  // overflow-y: auto;
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: $grey;
+  position: relative;
+  padding: 10px;
+  padding-left: 30px!important;
+  font-size: 16px;
+  color: white;
+  .inner-section {
+    span {
+      position: absolute;
+      margin-bottom: 40px;
+    }
+    i.material-icons {
+      margin-left: -10px;
+      margin-right: 8px;
+    }
+  }
+  &:after {
+    font-family: 'Material Icons';
+    content: 'keyboard_arrow_down';
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}

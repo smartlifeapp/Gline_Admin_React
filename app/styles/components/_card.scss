@@ -1,0 +1,21 @@
+.card-container {
+  flex-direction: column;
+  display: flex; width: 100%;
+  $content-container-height: 40px;
+  background-color: $light-grey;
+  border: $container-border-width solid $light-grey-border;
+  border-radius: $container-border-radius;
+  margin-top: 15px; margin-bottom: 15px;
+  .card-header {
+    font-size: 16px; font-weight: 500;
+    border-bottom: $container-border-width solid $light-grey-border; width: 100%; text-align: center; padding: 10px;
+  }
+  .card-body {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .card-row { display: flex; width: 100%;  border-bottom: $container-border-width solid $light-grey-border; padding-bottom: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+    .card-column { display: flex; flex: 1; flex-direction: column; }
+  }
+}

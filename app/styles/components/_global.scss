@@ -1,0 +1,85 @@
+*, :after, :before { box-sizing: border-box; }
+* { margin: 0; border: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a { text-decoration: none; }
+body {
+  color: #353535;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+}
+input { min-width: 80px; }
+select { min-width: 80px; }
+input, select {
+  outline: none;
+  height: 34px; border: 1px solid lightgray; border-radius: 2px;
+  &.fill { width: 100%; }
+  &:disabled { cursor: not-allowed; background-color: #f0f0f0; color: #232323; }
+}
+textarea { outline: none; min-height: 50px; resize: none; border: 1px solid lightgray; border-radius: 2px; padding: 5px; width: 100%; font-size: 15px;
+  &:disabled { cursor: not-allowed; background-color: #f0f0f0; color: #232323; }
+}
+
+input[type=text] { cursor: text;
+  width: 100%;
+}
+button, input[type=button] {
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-size: 14px;
+  height: 34px; padding: 0 25px 0 25px; background-color: $app-tint; color: white; border-radius: 5px; margin: 0 5px 0 5px;
+  .large-button { height: 44px; }
+  &:hover { opacity: 0.8; &:disabled { opacity: 0.7 } }
+  &.no-design { margin: 0; padding: 0; border-radius: 0; background-color: rgba(0,0,0,0); height: auto; }
+  &.primary { background-color: $app-tint; color: white; }
+  &.secondary { background-color: lightgray; color: dimgray; }
+  &.dismiss { background-color: lightgray; color: dimgray; }
+  &.alert { background-color: firebrick; color: white; }
+  &.fill { width: 100%; }
+  &:disabled { cursor: not-allowed; opacity: 0.5; }
+}
+input[type=button].small-button {
+  background-color: transparent; color: dimgray; border: 1px solid gainsboro;
+  height: 22px; padding: 0 5px 0 5px; min-width: 50px; font-size: 12px; margin: 5px 2px 0 2px;
+}
+input, select {
+  font-size: 14px;
+  padding: 0 5px 0 5px;
+  background-color: white;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+  strong {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+h3 {
+  font-size: 1rem!important;
+}
+h4 {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.main-container {
+  position: relative;
+  margin-top: 70px;
+  margin-left: 230px;
+  &.menu-hidden { margin-left: 0px; }
+}
+
+/* Smartphones */
+@media only screen and (min-width: 320px) {
+}
+
+/* Tablets (portrait) */
+@media only screen and (min-width: 768px) {
+}

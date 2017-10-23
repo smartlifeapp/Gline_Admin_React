@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "findball.co.kr",
+    "username": "findball",
+    "password": "3Efen[QI*MpH=OWSr3va",
+    "port": 22,
+    "remotePath": "/home/findball/findball_admin",
+    "uploadOnSave": true
+}

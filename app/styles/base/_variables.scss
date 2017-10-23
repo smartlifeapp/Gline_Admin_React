@@ -1,0 +1,31 @@
+$default-padding: 20px;
+$font-grey: #555;
+
+// Header
+$header-bg: #f5f5f5;
+$header-border: #dadada;
+$header-height: 60px;
+
+$alert: #ff3b30;
+$app-tint: #007bba;
+$appTint: #007bba;
+$dark-grey: #222;
+$grey: #555;
+$light-grey: #fafafa;
+$light-grey-border: #eeeeee;
+$light-color: #aaa;
+$reset-button-background-color: #777;
+
+// Sizes
+$container-border-width: 1px;
+$container-border-radius: 3px;
+
+$padding-large: 15px;
+$padding-medium: 10px;
+$padding-small: 5px;
+
+$form-group-height-large: 40px;
+
+$form-label-width-large: 150px;
+$form-label-width-small: 100px;
+$form-input-width-large: calc(100% - $form-label-width-large);

@@ -1,0 +1,40 @@
+.form-group {
+  align-items: center; display: flex; padding: 5px; min-width: 240px;
+  &.int { max-width: 200px; }
+  &.word, &.note, &.title, &.address, &.featureMenu, &.name, &.nameAndTitle, &.newPath { width: 100% }
+}
+.form-label { text-align: left; min-width: 60px; margin-right: 10px; }
+.form-content { flex: 1;
+  i.material-icons { color: gray; margin: 0 3px 0 3px; }
+  // img { width: 20px; height: 20px; margin: 0 3px 0 3px; }
+}
+.form-submit { display: flex; justify-content: center; width: 100%; padding: 10px; }
+input[type=text].word { width: 100% }
+.form-footer {
+  float: left;
+  background-color: white;
+  position: fixed;
+  left: 230px;
+  right: 0px;
+  bottom: 0px;
+  height: 90px;
+  padding-left: -230px;
+  line-height: 90px;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  background-color: $light-grey;
+  border-top: 1px solid #dadada;
+
+  .buttons {
+    margin-left: -230px;
+    .main-button {
+      width: 130px;
+      border-radius: 5px;
+      margin: 0 5px 10px 5px;
+      &.reset {
+        background-color: $reset-button-background-color;
+      }
+    }
+  }
+}

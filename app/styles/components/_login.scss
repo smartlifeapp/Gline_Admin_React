@@ -1,0 +1,30 @@
+.login {
+  .callout-auth {
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      width: 120px;
+      margin-top: 10px;
+      border-radius: 3px;
+    }
+    .alert {
+      color: $grey;
+      font-size: 0.9rem;
+      height: 20px;
+    }
+    width: 300px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: -150px;
+
+    background-color: $light-grey;
+    border: 1px solid $light-grey-border;
+    padding: 1rem;
+    text-align: center;
+  }
+}

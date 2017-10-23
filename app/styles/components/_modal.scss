@@ -1,0 +1,88 @@
+.modal-backdrop {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9997; display: flex; align-items: center; justify-content: center;
+  opacity: 1.0;
+  margin: 0; padding: 0; border-radius: 0;
+  &.dark { background-color: rgba(0, 0, 0, 0.5); }
+}
+button.screen {
+  background-color: transparent;
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9998; display: flex; align-items: center; justify-content: center;
+  opacity: 1.0;
+  margin: 0; padding: 0; border-radius: 0;
+  &:hover { opacity: 1.0; }
+}
+.modal-container {
+  opacity: 1.0;
+  min-width: 300px; min-height: 120px; z-index: 9999;
+  display: flex; flex-direction: column;
+  // margin: 50px;
+  border: 1px solid gainsboro; border-radius: 5px;
+  background-color: whitesmoke;
+  color: $app-tint; font-size: 16px; font-weight: 500;
+}
+.modal-header {
+  display: flex; align-items: center; justify-content: center; height: 44px;
+  border: 5px 5px 0 0; border-bottom: 1px solid lightgray;
+}
+.modal-body {
+  display: flex; flex: 1;
+  align-items: center; flex-direction: column; justify-content: space-between; padding: 15px;
+  .modal-input-container {
+    display: flex; width: 100%;
+    .modal-input {
+      width: 100%; margin: 0 0 10px 0;
+      &.textarea {
+        min-height: 150px;
+      }
+    }
+  }
+  .modal-form {
+    flex: 1; display: flex; justify-content: center; align-items: flex-end;  margin-top: 5px;
+  }
+  .modal-content {
+    display: flex; flex-direction: column; width: 100%; color: #353535; font-size: 14px; justify-content: center;
+  }
+}
+
+.modal-notification {
+  z-index: 10000;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid $light-grey-border;
+  padding: 1rem;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .modal-notification-header {
+    font-size: 18;
+    color: $app-tint;
+    font-weight: bold;
+    height: 20px;
+  }
+  .modal-notification-content {
+    font-size: 15;
+    font-weight: normal;
+    color: #888;
+    flex: 1;
+    display: flex; align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.notification-animation {
+  animation: fadeInAndOut 3.5s 0.5s infinite ease-in-out both;
+}
+@keyframes fadeInAndOut {
+  0% { opacity: 1; transform: translateX(320px); }
+  13% { opacity: 1; transform: translateY(0px); }
+  87% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateX(320px); }
+}

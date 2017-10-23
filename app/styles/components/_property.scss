@@ -1,0 +1,11 @@
+.property-content {
+  height: 500px;
+  overflow-y: auto;
+  margin: 5px;
+  img {
+    width: 100%!important;
+    height: auto!important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

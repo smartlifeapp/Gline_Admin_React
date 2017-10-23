@@ -1,0 +1,202 @@
+.header {
+  position: fixed;
+  top: 0px;
+  left: 230px;
+  right: 0px;
+  background: $header-bg;
+  border-bottom: 1px solid $header-border;
+  height: $header-height;
+  z-index: 9000;
+  &.menu-hidden {
+    left: 0px;
+  }
+  h2, h3, i.material-icons {
+    float: left;
+    height: $header-height;
+    line-height: $header-height;
+    vertical-align: bottom;
+  }
+  h2 strong {
+    color: $app-tint;
+    margin-left: 10px;
+  }
+  h3 {
+    margin-top: 5px;
+  }
+  i.material-icons {
+    float: left;
+    color: $font-grey;
+    margin: 5px 5px 0 5px;
+  }
+  .button {
+    color: #666;
+    background-color: rgba(0, 0, 0, 0);
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: $header-height - 1px;
+    height: $header-height - 1px;
+    i.material-icons {
+      margin: 0;
+      float: none;
+      font-size: 34px;
+      color: inherit;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.apple-loading-spinner {
+  margin-top: 26px;
+  margin-right: 25px;
+  float: right;
+  font-size: 26px;
+  position: relative;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+}
+.apple-loading-spinner.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.apple-loading-spinner .apple-loading-spinner-blade {
+  position: absolute;
+  left: 0.4629em;
+  bottom: 0;
+  width: 0.074em;
+  height: 0.2777em;
+  border-radius: 0.0555em;
+  background-color: transparent;
+  -webkit-transform-origin: center -0.2222em;
+      -ms-transform-origin: center -0.2222em;
+          transform-origin: center -0.2222em;
+  -webkit-animation: apple-loading-spinner-fade 1s infinite linear;
+          animation: apple-loading-spinner-fade 1s infinite linear;
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(2) {
+  -webkit-animation-delay: 0.083s;
+          animation-delay: 0.083s;
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(3) {
+  -webkit-animation-delay: 0.166s;
+          animation-delay: 0.166s;
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(4) {
+  -webkit-animation-delay: 0.249s;
+          animation-delay: 0.249s;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(5) {
+  -webkit-animation-delay: 0.332s;
+          animation-delay: 0.332s;
+  -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(6) {
+  -webkit-animation-delay: 0.415s;
+          animation-delay: 0.415s;
+  -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(7) {
+  -webkit-animation-delay: 0.498s;
+          animation-delay: 0.498s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(8) {
+  -webkit-animation-delay: 0.581s;
+          animation-delay: 0.581s;
+  -webkit-transform: rotate(210deg);
+      -ms-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(9) {
+  -webkit-animation-delay: 0.664s;
+          animation-delay: 0.664s;
+  -webkit-transform: rotate(240deg);
+      -ms-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(10) {
+  -webkit-animation-delay: 0.747s;
+          animation-delay: 0.747s;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(11) {
+  -webkit-animation-delay: 0.83s;
+          animation-delay: 0.83s;
+  -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+.apple-loading-spinner .apple-loading-spinner-blade:nth-child(12) {
+  -webkit-animation-delay: 0.913s;
+          animation-delay: 0.913s;
+  -webkit-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+@-webkit-keyframes apple-loading-spinner-fade {
+  0% {
+    background-color: #69717d;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes apple-loading-spinner-fade {
+  0% {
+    background-color: #69717d;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+//
+// /* Smartphones */
+// @media only screen and (min-width: 320px) {
+//   .header {
+//     left: 0px;
+//   }
+// }
+//
+// /* Tablets (portrait) */
+// @media only screen and (min-width: 768px) {
+//   .header {
+//     left: 230px;
+//   }
+// }

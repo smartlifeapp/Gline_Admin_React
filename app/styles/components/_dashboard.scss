@@ -1,0 +1,17 @@
+.stat-value-container {
+  color: #353535;
+  padding: 0; background-color: rgba(0,0,0,0); height: auto;
+  display: flex; flex-direction: row;
+  border: 1px solid $light-grey-border; border-radius: 5px; justify-content: center; align-items: center; margin: 5px;
+  .stat-icon-container {
+    width: 60px; height: 82px; background-color: $light-grey; display: flex; align-items: center; justify-content: center; border-radius: 5px 0 0 5px;
+    img.stat-icon {
+      width: 24px; height: 24px; object-fit: contain;
+    }
+  }
+  .stat-value-content-container {
+    display: flex; flex-direction: column;
+    .stat-value-content { min-width: 160px; height: 50px; text-align: center; vertical-align: middle; line-height: 50px; padding: 0 15px 0 15px; font-size: 18px; font-weight: bold; }
+    .stat-value-label { background-color: white; height: 32px; text-align: center; line-height: 32px; vertical-align: middle; font-weight: lighter; font-size: 7;}
+  }
+}

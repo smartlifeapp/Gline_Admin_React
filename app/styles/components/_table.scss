@@ -1,0 +1,53 @@
+table {
+  border: 1px solid $light-grey-border;
+  border-spacing: 0;
+  text-align: center;
+  min-width: 100%;
+  th {
+    height: 44px; white-space: nowrap;
+    border-bottom: 1px solid gainsboro;
+    i.material-icons { color: $appTint; margin-right: -24px; }
+  }
+  tbody {
+    border: none;
+    td {
+      white-space: nowrap; height: 40px; border-bottom: 1px solid gainsboro; padding: 0 15px 0 15px; min-width: 60px;
+      img { width: 50px; height: 50px; object-fit: 'cover'; margin-top: 5px; }
+      // color: red;
+      &.status {
+        &.banned, &.adminDeleted, &.deregistered { color: red; }
+        &.undealt, &.waitingDeposit { color: orangered; }
+        &.inactive, &.unlisted, &.userDeleted { color: SteelBlue; }
+        &.active, &.ended, &.normal, &.dealt, &.listed, &.pointGiven, &.approved { color: limegreen; }
+      }
+    }
+    tr:hover {
+      background-color: #cce5ff;
+    }
+  }
+}
+
+// /* Smartphones */
+// @media only screen and (min-width: 320px) {
+//   th.photoUrl, td.photoUrl, th.comment, td.comment {
+//     visibility: hidden;
+//     display: hidden;
+//   }
+// }
+//
+// /* Tablets (portrait) */
+// @media only screen and (min-width: 768px) {
+//
+// }
+//
+// /* Desktop (portrait) */
+// @media only screen and (min-width: 900px) {
+//   th.comment, td.comment {
+//     visibility: visible;
+//     display: table-cell;
+//   }
+//   th.photoUrl, td.photoUrl {
+//     visibility: visible;
+//     display: table-cell;
+//   }
+// }

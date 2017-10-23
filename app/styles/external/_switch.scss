@@ -1,0 +1,30 @@
+.switch {
+  // border: 1px solid #ccc;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: lightgray;
+}
+.switch-toggle{
+  // border: 1px solid #999;
+  // box-shadow: 1px 1px 1px #ccc;
+  width: 20px;
+  height: 20px;
+  left: 3px;
+  top: 3px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  transition: left .2s ease-in-out
+}
+.switch.on{
+  background: #E61438;
+}
+.switch.on .switch-toggle{
+  left:26px;
+}
+.switch.disabled {
+  // cursor: not-allowed;
+}

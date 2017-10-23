@@ -1,0 +1,123 @@
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figure,figcaption,footer,header,hgroup,menu,nav,output,section,summary,time,mark,audio,video{margin:0;padding:0;}
+body{font-size:13px; font-family:"Noto Sans KR", sans-serif; color:#2a2a2a;line-height:160%; -ms-overflow-style: none;}
+a, a:link,a:visited{color:#2a2a2a;text-decoration:none;}
+a:hover{text-decoration:underline; transition:all 0.2s ease-in 0s;}
+ul,ol,li{list-style:none}
+address,em{font-style:normal}
+table{border-spacing:0px;border-collapse:collapse; width:100%;}
+table,fieldset,th,td,img{border:none}
+th{border:1px solid #d5d5d5; line-height:34px;}
+td{word-break:break-all; border:1px solid #d5d5d5; line-height:34px;}
+img,input,select{vertical-align:middle;}
+caption{width:0px;height:0px;line-height:0px;visibility:hidden;overflow:hidden}
+legend{position:absolute;width:0px;height:0px;line-height:0px;visibility:hidden;overflow:hidden}
+hr{display:none;}
+button{border:1px solid #d5d5d5;cursor:pointer;}
+select{border:1px solid #d5d5d5; width:100%; padding-left:1%; height:35px; line-height:34px;}
+textarea{border:1px solid #d5d5d5; width:96%; padding:2%;}
+input[type="button"]{cursor:pointer; border:0;}
+input[type="submit"]{cursor:pointer; border:0;}
+input[type="submit"]:hover{background:#007bba !important;}
+input[type="text"]{border:1px solid #d5d5d5; line-height:32px; padding-left:1%; width:99%;}
+input[type="password"]{border:1px solid #d5d5d5; line-height:32px; padding-left:1%; width:99%;}
+
+i{vertical-align:top;}
+select:focus, textarea:focus, input:focus{outline:none;}
+img{width:100%;}
+
+input[type="checkbox"], input.checkbox {display:inline-block; width:21px; height:21px; vertical-align:top; -webkit-appearance:none; background-size:100%; cursor:pointer; margin:0 !important;}
+input[type="checkbox"]:checked {display:inline-block; width:21px; height:21px; vertical-align:top; background-size:100%; -webkit-appearance:none; cursor:pointer; margin:0 !important;}
+
+::-webkit-input-placeholder { color:#aaa; font-size:14px; line-height:19px; padding-top:2px; letter-spacing:-1px; }
+:-moz-placeholder { color:#aaa; font-size:14px; line-height:19px; padding-top:2px; letter-spacing:-1px; /* Firefox 18- */}
+::-moz-placeholder { color:#aaa; font-size:14px; line-height:19px; padding-top:2px; letter-spacing:-1px; /* Firefox 19+ */}
+:-ms-input-placeholder { color:#aaa; font-size:14px; line-height:19px; padding-top:2px; letter-spacing:-1px; }
+
+/* Common */
+.f_left{ float:left;}
+.f_right{ float:right;}
+.txt_ct{text-align:center;}
+.clear_bt{ clear:both;}
+.hidden{overflow:hidden;}
+.date{font-size:12px; color:#777;}
+.bluetext{color:#007bba;}
+.redtext{color:#ce1b1b;}
+h4{padding:15px 0 5px; font-size:16px;}
+h5{padding:12px 0 7px; font-size:14px;}
+.line_title{border-bottom:2px solid #2a2a2a; margin-bottom:20px;}
+
+#wrap{min-width:320px;}
+.aside{float:left; background:#007bba; width:230px; height:100%; position:absolute;}
+h1{color:#fff; font-weight:700; font-size:30px; letter-spacing:-1px; text-align:center; padding:20px 0;}
+.categoryBox ul li a{display:block; padding:4% 3% 4% 5%; background:#007bba; font-size:14px !important; color:#fff;}
+.categoryBox .bmenu a{padding:5% 7% 5% 7%; display:block; font-size:16px;}
+.categoryBox .bmenu span{float:right; color:#0e9ce5; font-size:11px;}
+.site-header-wrap {border-bottom:1px solid #cd9ad6;}
+.accordion, .accordion * {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.accordion-section-title {width:100%; display:inline-block; background:#007bba; transition:all linear 0.15s; color:#fff !important;}
+.accordion-section-title i{margin:0 12px 0 0;}
+.accordion-section-title.active, .accordion-section-title:hover {background:#006ea6; text-decoration:none;}
+.accordion-section:last-child .accordion-section-title {border-bottom:none;}
+.accordion-section-content {display:none;}
+.accordion-section-content a{padding:1% 7% 3% 22% !important; color:#8dd8ff !important;}
+
+#container{margin-left:230px;}
+
+
+/* Sliding swipe */
+.topMenu {height:100%; width:260px;background-color:#007bba; left:0; top:0;z-index:9999; position:fixed;overflow-y: auto;overflow-x: visible; transform: translate(-300px,0);}
+.ssm-overlay {position:fixed; top:0; right:0;
+ bottom:0; left:0; background-color: rgba(0,0,0,0.5); display:none; z-index:999;}
+
+.contentbox{width:92%; padding:2% 4% 4% 4%;}
+
+/* 기본관리 */
+.basic_manage .firstbox select{width:100px;}
+.basic_manage input[type="text"]{width:35%;}
+.basic_manage .twobox input[type="text"]{width:10%;}
+.basic_manage .twobox i{margin:5px 1% 0 1%;}
+.basic_manage input[type="button"]{background:#007bba; color:#fff; line-height:26px; padding:0 1%;}
+.basic_manage input[type="button"]:hover{opacity:.8;}
+.basic_manage .twobox div{margin:10px 0 20px;}
+.basic_manage .twobox .button{text-align:center;}
+.basic_manage input[type="submit"]{background:#2a2a2a; color:#fff; width:120px; line-height:40px; margin:0 auto 30px;}
+
+.basic_managelist td{text-align:center;}
+.basic_managelist td i{padding:0 1%; margin-top:4px;}
+.basic_rgs input{width:30%;}
+.basic_manage .thema_sel{width:28% !important;}
+
+.numbering{text-align:center; line-height:22px; margin:30px 0 10px;}
+.numbering span{padding:0 .5%; font-size:16px;}
+.numbering span:hover{color:#007bba;}
+.mem_history img{width:70px; padding:7px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1000px){
+.basic_manage select{width:15%;}
+.basic_manage input[type="text"]{width:30%;}
+.aside{display:none;}
+#container{margin-left:0;}
+.menuic{display:block; float:right; padding:8px 3% 0 3%;}
+.menuic i{color:#007bba !important; font-size:33px !important;}
+.basic_manage input[type="text"]{width:55%;}
+.basic_manage .twobox input[type="text"]{ width:33%;}
+.test{width:100%;}
+.basic_rgs input{width:98%;}
+.basic_manage .thema_sel{width:98% !important;}
+}
